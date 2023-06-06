@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bgMain : #383838c0;
+  --bgControls: #00000013;
+  --textTimer: #3F404B;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Josefin Sans', sans-serif;
+  background-image: url('./assets/amanhecer.svg');
+  background-size: cover;
+  
+  display: grid;
+  min-height: 100vh;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  align-self: end;
+  justify-self: flex-start;
+
+  background-color: var(--bgControls);
+  color: #fff;
+
+  padding: 1rem;
+
+}
+
+h2 {
+  margin: 1rem 0;
+}
+
+p{
+  font-weight: 100;
+}
+
+
+main {
+  align-self: end;
+  justify-self: center;
+  
+  background-color: var(--bgControls);
+  border-radius: 1rem;
+  
+  padding: 2.6rem 5.2rem;
+  margin: 0 auto;
+}
+
+.timer{
+  color: #ffffffc4;
+  font-size: clamp(4rem, 4rem + 10vw, 8rem);
+}
+
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.controls {
+  background-color: var(--bgControls);
+  border-radius: 9999px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9rem;
+
+  height: clamp(8rem, 5rem + 10vh, 22.8rem);
+  width: clamp(10rem, 10rem + 30vw, 25.8rem);
+
+}
+
+footer {
+  align-self: end;
+  justify-self: end;
+  padding: 0 2rem 2rem 0;
+}
